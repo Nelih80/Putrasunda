@@ -263,12 +263,12 @@ fi
 }
 clear
 restart_system() {
-USRSC=$(wget -qO- https://raw.githubusercontent.com/Putrasunda/izin/main/ip | grep $ipsaya | awk '{print $2}')
-EXPSC=$(wget -qO- https://raw.githubusercontent.com/Putrasunda/izin/main/ip | grep $ipsaya | awk '{print $3}')
+USRSC=$(wget -qO- https://raw.githubusercontent.com/Nelih80/Putrasunda/izin/main/ip | grep $ipsaya | awk '{print $2}')
+EXPSC=$(wget -qO- https://raw.githubusercontent.com/Nelih80/Putrasunda/izin/main/ip | grep $ipsaya | awk '{print $3}')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
 <code>────────────────────</code>
-<b>   🟢 IZIN AUTOSCRIPT DONE 🟢</b>
+<b> 🟢 IZIN AUTOSCRIPT DONE 🟢</b>
 <code>────────────────────</code>
 <code>ID     : </code><code>$USRSC</code>
 <code>Domain : </code><code>$domain</code>
@@ -936,7 +936,7 @@ clear
 echo -e ""
 echo -e ""
 echo -e "\033[96m==========================\033[0m"
-echo -e "\033[0;36m      INSTALL BERHASIL      \033[0m"
+echo -e "\033[0;36m INSTALL TELAH SELESAI      \033[0m"
 echo -e "\033[96m==========================\033[0m"
 echo -e ""
 sleep 2
