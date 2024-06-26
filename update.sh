@@ -38,7 +38,7 @@ fun_bar() {
 res1() {
     wget https://raw.githubusercontent.com/Nelih80/Putrasunda/main/Cdy/menu.zip
     wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/Nelih80/Putrasunda/main/Enc/encrypt" ; chmod +x /usr/bin/enc
-    7z x -pBumiAyuVpn12BAV menu.zip
+    7z x -pPutrasunda@Js-Tunneling menu.zip
     chmod +x menu/*
     enc menu/*
     mv menu/* /usr/local/sbin
@@ -56,13 +56,13 @@ res1() {
 }
 netfilter-persistent
 clear
-echo -e "\e[92;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " \033[0;36m            UPDATE SCRIPT        \e[0m"
-echo -e "\e[92;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[92;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e " \033[0;36m            UPDATE SCRIPT            \e[0m"
+echo -e "\e[92;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e "  \033[0;36m update script service\e[92;1m"
 fun_bar 'res1'
-echo -e "\e[92;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[92;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 read -n 1 -s -r -p "Press [ Enter ] to back on menu"
 menu

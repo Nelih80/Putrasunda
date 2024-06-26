@@ -20,7 +20,7 @@ TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
 CHATID="5969033638"
-KEY="7152202038:AAH14Ppf2L-HrHAWM_YGTkP-1oj0VhQwQoI0"
+KEY="7118033657:AAFGJC8f6BGKgRE9RmL60r9kuTo8OhrNdMk"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
@@ -28,7 +28,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[96;1m            WELCOME AUTO SCRIPT PUTRASUNDA              \033[0m"
+echo -e "\033[96;1m            WELCOME AUTO SCRIPT JS TINNELING              \033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 3
@@ -234,8 +234,8 @@ clear
 echo -e "    ----------------------------------"
 echo -e "   |\e[1;32mPlease Select a Domain Type Below \e[0m|"
 echo -e "    ----------------------------------"
-echo -e "     \e[1;32m1)\e[0m Your Domain"
-echo -e "     \e[1;32m2)\e[0m Random Domain "
+echo -e "     \e[1;32m1)\e[0m Masukan Domain Sendiri"
+echo -e "     \e[1;32m2)\e[0m Domain Bawaan Script "
 echo -e "   ------------------------------------"
 read -p "   Please select numbers 1-2 or Any Button(Random) : " host
 echo ""
@@ -268,7 +268,7 @@ EXPSC=$(wget -qO- https://raw.githubusercontent.com/Putrasunda/izin/main/ip | gr
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
 <code>────────────────────</code>
-<b> 🟢 DONE SEWA AUTOSCRIPT 🟢</b>
+<b>   🟢 IZIN AUTOSCRIPT DONE 🟢</b>
 <code>────────────────────</code>
 <code>ID     : </code><code>$USRSC</code>
 <code>Domain : </code><code>$domain</code>
@@ -787,7 +787,7 @@ clear
 print_install "Memasang Menu Packet"
 wget ${REPO}Cdy/menu.zip
 wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/Nelih80/Putrasunda/main/Enc/encrypt" ; chmod +x /usr/bin/enc
-7z x -pBumiAyuVpn12BAV menu.zip
+7z x -pPutrasunda@Js-Tunneling menu.zip
 chmod +x menu/*
 enc menu/*
 mv menu/* /usr/local/sbin
