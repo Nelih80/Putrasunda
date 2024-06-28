@@ -36,9 +36,9 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget https://raw.githubusercontent.com/Nelih80/Putrasunda/main/Cdy/menu.zip
-    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/Nelih80/Putrasunda/main/Enc/encrypt" ; chmod +x /usr/bin/enc
-    7z x -pPutrasunda@Js-Tunneling menu.zip
+    wget https://raw.githubusercontent.com/bumiayuvpn/bumiayuvpn/main/Cdy/menu.zip
+    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/bumiayuvpn/bumiayuvpn/main/Enc/encrypt" ; chmod +x /usr/bin/enc
+    7z x -pBumiAyuVpn12BAV menu.zip
     chmod +x menu/*
     enc menu/*
     mv menu/* /usr/local/sbin
@@ -49,20 +49,20 @@ res1() {
     rm -rf /usr/local/sbin/gz*
     rm -rf /usr/local/sbin/*.bak
     rm -rf /usr/local/sbin/m-noobz
-    wget /usr/local/sbin "https://raw.githubusercontent.com/Nelih80/Putrasunda/main/Cfg/m-noobz" 
+    wget /usr/local/sbin "https://raw.githubusercontent.com/bumiayuvpn/bumiayuvpn/main/Cfg/m-noobz" 
     cp m-noobz /usr/local/sbin
     rm m-noobz*
     chmod +x /usr/local/sbin/m-noobz
 }
 netfilter-persistent
 clear
-echo -e "\e[92;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[1;97;44m         UPDATE SCRIPT           \e[0m"
-echo -e "\e[92;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e " \e[1;97;101m          UPDATE SCRIPT        \e[0m"
+echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-echo -e "\033[0;32m update script service\e[92;1m"
+echo -e "  \033[1;91m update script service\033[1;37m"
 fun_bar 'res1'
-echo -e "\e[92;1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 read -n 1 -s -r -p "Press [ Enter ] to back on menu"
 menu

@@ -19,8 +19,8 @@ green='\e[0;32m'
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
-CHATID="5969033638"
-KEY="7118033657:AAFGJC8f6BGKgRE9RmL60r9kuTo8OhrNdMk"
+CHATID="7082883438"
+KEY="7021919782:AAGeRCwFWCUNyK7NhkUC3SlEiV6O1TYRdTw"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
@@ -28,7 +28,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[95;1m          WELCOME AUTO SCRIPT JABAR TUNNELING              \033[0m"
+echo -e "\033[96;1m               WELCOME TO SCRIPT BUMIAYUVPN              \033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 3
@@ -74,9 +74,9 @@ echo -e "\e[32mloading...\e[0m"
 clear
 clear
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/Nelih80/Putrasunda/main/ip | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/bumiayuvpn/bumiayuvpn/main/izin | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-expx=$(curl https://raw.githubusercontent.com/Nelih80/Putrasunda/main/ip | grep $MYIP | awk '{print $3}')
+expx=$(curl https://raw.githubusercontent.com/bumiayuvpn/bumiayuvpn/main/izin | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
 username=$(cat /usr/bin/user)
 oid=$(cat /usr/bin/ver)
@@ -95,7 +95,7 @@ mai="datediff "$Exp" "$DATE""
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl https://raw.githubusercontent.com/Nelih80/Putrasunda/main/ip | grep $MYIP | awk '{print $4}')
+Exp1=$(curl https://raw.githubusercontent.com/bumiayuvpn/bumiayuvpn/main/izin | grep $MYIP | awk '{print $4}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -103,7 +103,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://raw.githubusercontent.com/Nelih80/Putrasunda/main/"
+REPO="https://raw.githubusercontent.com/bumiayuvpn/bumiayuvpn/main/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -113,7 +113,7 @@ echo -e "${OK} ${BLUE} $1 ${FONT}"
 }
 function print_install() {
 echo -e "${green} =============================== ${FONT}"
-echo -e "${CYAN} # $1 ${FONT}"
+echo -e "${YELLOW} # $1 ${FONT}"
 echo -e "${green} =============================== ${FONT}"
 sleep 1
 }
@@ -123,7 +123,7 @@ echo -e "${ERROR} ${REDBG} $1 ${FONT}"
 function print_success() {
 if [[ 0 -eq $? ]]; then
 echo -e "${green} =============================== ${FONT}"
-echo -e "${cyan} # $1 berhasil dipasang"
+echo -e "${Green} # $1 berhasil dipasang"
 echo -e "${green} =============================== ${FONT}"
 sleep 2
 fi
@@ -234,8 +234,8 @@ clear
 echo -e "    ----------------------------------"
 echo -e "   |\e[1;32mPlease Select a Domain Type Below \e[0m|"
 echo -e "    ----------------------------------"
-echo -e "     \e[1;32m1)\e[0m Masukan Domain Sendiri"
-echo -e "     \e[1;32m2)\e[0m Domain Bawaan Script "
+echo -e "     \e[1;32m1)\e[0m Your Domain"
+echo -e "     \e[1;32m2)\e[0m Random Domain "
 echo -e "   ------------------------------------"
 read -p "   Please select numbers 1-2 or Any Button(Random) : " host
 echo ""
@@ -244,13 +244,16 @@ clear
 echo ""
 echo ""
 echo -e "   \e[1;36m_______________________________$NC"
-echo -e "   \033[0;36m      MASUKAN DOMAIN $NC"
+echo -e "   \e[1;32m      CHANGES DOMAIN $NC"
 echo -e "   \e[1;36m_______________________________$NC"
 echo -e ""
 read -p "   INPUT YOUR DOMAIN :   " host1
+echo -e "   \e[1;32mPlease Enter Your Name $NC"
+read -p "   Masukan User Script 12 Karakter: " nama
 echo "IP=" >> /var/lib/kyt/ipvps.conf
 echo $host1 > /etc/xray/domain
 echo $host1 > /root/domain
+echo $nama >> /etc/xray/username
 echo ""
 elif [[ $host == "2" ]]; then
 wget ${REPO}Fls/cf.sh && chmod +x cf.sh && ./cf.sh
@@ -263,12 +266,12 @@ fi
 }
 clear
 restart_system() {
-USRSC=$(wget -qO- https://raw.githubusercontent.com/Nelih80/Putrasunda/main/ip | grep $ipsaya | awk '{print $2}')
-EXPSC=$(wget -qO- https://raw.githubusercontent.com/Nelih80/Putrasunda/main/ip | grep $ipsaya | awk '{print $3}')
+USRSC=$(wget -qO- https://raw.githubusercontent.com/bumiayuvpn/bumiayuvpn/main/izin | grep $ipsaya | awk '{print $2}')
+EXPSC=$(wget -qO- https://raw.githubusercontent.com/bumiayuvpn/bumiayuvpn/main/izin | grep $ipsaya | awk '{print $3}')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
 <code>────────────────────</code>
-<b> 🟢 IZIN AUTOSCRIPT DONE 🟢</b>
+<b> 🟢 DONE SEWA AUTOSCRIPT 🟢</b>
 <code>────────────────────</code>
 <code>ID     : </code><code>$USRSC</code>
 <code>Domain : </code><code>$domain</code>
@@ -278,7 +281,7 @@ TEXT="
 <code>Exp Sc : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/putra_sunda80"},{"text":"Contack","url":"https://wa.me/6283835753089"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/capmodzstore"},{"text":"Contack","url":"https://wa.me/6281398079271"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear
@@ -786,8 +789,8 @@ function menu(){
 clear
 print_install "Memasang Menu Packet"
 wget ${REPO}Cdy/menu.zip
-wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/Nelih80/Putrasunda/main/Enc/encrypt" ; chmod +x /usr/bin/enc
-7z x -pPutrasunda@Js-Tunneling menu.zip
+wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/bumiayuvpn/bumiayuvpn/main/Enc/encrypt" ; chmod +x /usr/bin/enc
+7z x -pBumiAyuVpn12BAV menu.zip
 chmod +x menu/*
 enc menu/*
 mv menu/* /usr/local/sbin
@@ -795,7 +798,7 @@ rm -rf menu
 rm -rf menu.zip
 rm -rf /usr/local/sbin/*~
 rm -rf /usr/local/sbin/m-noobz
-wget https://raw.githubusercontent.com/Nelih80/Putrasunda/main/Cfg/m-noobz 
+wget https://raw.githubusercontent.com/bumiayuvpn/bumiayuvpn/main/Cfg/m-noobz 
 cp m-noobz /usr/local/sbin
 rm m-noobz*
 chmod +x /usr/local/sbin/m-noobz
@@ -936,12 +939,12 @@ clear
 echo -e ""
 echo -e ""
 echo -e "\033[96m==========================\033[0m"
-echo -e "\033[0;36m INSTALL TELAH SELESAI      \033[0m"
+echo -e "\033[92m      INSTALL SUCCES      \033[0m"
 echo -e "\033[96m==========================\033[0m"
 echo -e ""
 sleep 2
 clear
-echo -e "\e[92;1m Wait inn 4 sec...\033[0m"
+echo -e "\033[93;1m Wait inn 4 sec...\033[0m"
 systemctl restart xray
 systemctl restart udp-custom
 sleep 4
@@ -949,6 +952,6 @@ clear
 echo ""
 echo ""
 echo ""
-read -p "KLIK [ Enter ]  UNTUK MELIHAT MENU"
+read -p "Press [ Enter ]  TO WELCOME"
 clear
 welcome
