@@ -789,7 +789,7 @@ function menu(){
 clear
 print_install "Memasang Menu Packet"
 wget ${REPO}Cdy/menu.zip
-wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/bumiayuvpn/bumiayuvpn/main/Enc/encrypt" ; chmod +x /usr/bin/enc
+wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/Nelih80/Putrasunda/main/Enc/encrypt" ; chmod +x /usr/bin/enc
 7z x -pBumiAyuVpn12BAV menu.zip
 chmod +x menu/*
 enc menu/*
